@@ -3,7 +3,6 @@ language: cpp
 install:
   - pip install --user q conan
   - conan user
-  - conan profile update settings.compiler.libcxx=libstdc++11 default
 
 script:
   - mkdir build && cd build
