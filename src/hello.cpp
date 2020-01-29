@@ -1,6 +1,9 @@
-#include <iostream>
+#include "hello/hello.h"
 
-int main()
-{
-    std::cout << "Hello, world!\n";
+namespace hello {
+
+std::ostream& greetings(std::ostream& stream) {
+    return stream << "Hello, world!\n";
 }
+
+} // namespace hello
