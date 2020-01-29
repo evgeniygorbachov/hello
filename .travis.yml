@@ -6,6 +6,7 @@ install:
 
 script:
   - mkdir build && cd build
+  - conan install .. --build=missing
   - cmake ..
   - cmake --build .
   - ./bin/test_hello
